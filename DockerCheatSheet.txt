@@ -194,7 +194,7 @@ CONTAINER ID        IMAGE                          COMMAND              CREATED 
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 
 
-
+--------------------------------------------------------------------
 
 Date of Notes : 22-12-2020
 
@@ -559,6 +559,7 @@ See 'C:\Program Files\Docker Toolbox\docker.exe run --help'.
 Important Notes: it didn't work because I didn't find where I can permit at docker UI to reach my local disk(C or E). 
 Also we shouldn't use binding metod with production. It can just use at development device. 
 
+--------------------------------------------------------------------
 
 Date of Notes : 23-12-2020
 Docker Network Objects
@@ -1190,6 +1191,7 @@ NETWORK ID          NAME                DRIVER              SCOPE
 bc224eb7a822        host                host                local
 8ad1749707e8        none                null                local
 
+--------------------------------------------------------------------
 
 Date of Notes : 24-12-2020
 
@@ -1609,7 +1611,7 @@ PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 _=/usr/bin/printenv
 root@07d5e11cb0b7:/# exit
 
---  
+-- how to add Environment variable list from own computer folder when create a container 
 > cd C:\AdanZyeDocker\kisim4\bolum42
 > docker container run -it --env-file .\env.list ubuntu bash
 root@45dffb9b281c:/# printenv
@@ -1628,7 +1630,7 @@ _=/usr/bin/printenv
 root@45dffb9b281c:/# exit
 exit
 
---  
+-- We can use an environment variable to determine which database we use. Ex:This image expect us to set an environment variable named 'veritabani'.
 > docker container run --env database=test.pizzashop.com ozgurozturknet/env1
 Unable to find image 'ozgurozturknet/env1:latest' locally
 latest: Pulling from ozgurozturknet/env1
@@ -1647,7 +1649,7 @@ Baglanilan veritabani: test.pizzashop.com
 Baglanilan veritabani: prod.pizzashop.com
 
 
-
+-------------------------------------------------------------------------
 
 
 
